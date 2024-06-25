@@ -202,6 +202,22 @@ Example: basicCalculator(10, 5, 'subtract') should return 5.
 Complete the exercise in the space below:
 */
 
-
+function basicCalculator(num1,num2,str){
+    if(str === "add" || str === "Add" ){
+        return num1 + num2
+    }
+    else if(str === "subtract" || str === "Subtract" ){
+        return num1 - num2
+    }
+    else if(str === "multiply" || str === "Multiply" ){
+        return num1 * num2
+    }
+    else if(str === "divide" || str === "Divide" ){
+        return num1 / num2
+    }
+    else{
+        return 'NOT VALID OPERATION'
+    }
+}
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
